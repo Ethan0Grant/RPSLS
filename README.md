@@ -1,1 +1,1 @@
-# RPSLS
+Ethan's RPSLS Project
