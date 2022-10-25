@@ -15,40 +15,47 @@ class Game:
         self.p1, self.p2 = self.create_players()
 
     def welcome(self):
-        print('Welcome to RPSLS!!')
-        # sleep(1)
+        print()
+        print()
+        print('Welcome to a wonderful game of chance!')
+        print()
+        sleep(1)
         print('Each player picks a gesture and reveals it at the same time. The winner is the one who gets 2 wins. In a tie, the process is repeated until a winner is found.')
-        # sleep(1)
-        print('1You can choose between Rock, Paper, Scissors, Lizard or Spock')
-        # sleep(1)
+        print()
+        sleep(1)
+        print('You can choose between Rock, Paper, Scissors, Lizard or Spock')
+        print()
+        sleep(1)
         print('Rock crushes Scissors')
-        # sleep(1)
+        sleep(1)
         print('Scissors cuts Paper')
-        # sleep(1)
+        sleep(1)
         print('Paper covers Rock')
-        # sleep(1)
+        sleep(1)
         print('Rock crushes Lizard')
-        # sleep(1)
+        sleep(1)
         print('Lizard poisons Spock')
-        # sleep(1)
+        sleep(1)
         print('Spock smashes Scissors')
-        # sleep(1)
+        sleep(1)
         print('Scissors decapitates Lizard')
-        # sleep(1)
+        sleep(1)
         print('Lizard eats Paper')
-        # sleep(1)
+        sleep(1)
         print('Paper disproves Spock')
-        # sleep(1)
+        sleep(1)
         print('Spock vaporizes Rock')
-        # sleep(1)
+        sleep(1)
         
 
     def prompt_instruction(self):
+        print()
         print('Rock(0)\nPaper(1)\nScissors(2)\nLizzard(3)\nSpock(4)')
 
 
 
     def get_player_count(self):
+            print()
             type = input("Please input player count: (Min:1 Max:3): ")
             if type in ['1', '2', '3']:
                 return int(type)
@@ -66,6 +73,7 @@ class Game:
             self.round_winner_name = self.p1.name
 
         else:
+            print()
             print("Tie.")
 
 
@@ -77,10 +85,12 @@ class Game:
         self.p1.give_gesture()
         self.p2.give_gesture()
         self.check_move()
+        print()
         print("{} won the round!".format(self.round_winner_name))
 
     
     def tell_winner(self):
+        print ()
         print("{} won the game!".format(self.round_winner_name))
 
     
@@ -113,7 +123,8 @@ class Game:
 
             self.__init__()
 
-
+        print()
+        print()
         print("Thanks for playing!")
             
             
