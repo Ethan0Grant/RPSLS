@@ -7,6 +7,7 @@ class Human(Player):
     
     def give_gesture(self):
         while True:
+            print()
             gesture = input("Please input a number correspoinding to the gesture: ")
             if gesture in ['0', '1', '2', '3', '4']: 
                 self.move = self.gesture[int(gesture)]
@@ -17,4 +18,5 @@ class Human(Player):
 
 
     def set_name(self):
+        print()
         self.name = input("Please input player name: ")
